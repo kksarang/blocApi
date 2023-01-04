@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_bloc_api_example/page/example-page.dart';
+import 'package:flutter_bloc_api_example/page/home/example-page.dart';
 
 void main() {
   runApp(const MyApp());

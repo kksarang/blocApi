@@ -2,7 +2,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:syncfusion_flutter_datepicker/datepicker.dart';
 
-import '../utilites/gradient_button.dart';
+import '../../utilites/gradient_button.dart';
 
 class ExampleApi extends StatelessWidget {
   const ExampleApi({Key? key}) : super(key: key);

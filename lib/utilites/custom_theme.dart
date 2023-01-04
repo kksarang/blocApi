@@ -1,85 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:get/get.dart';
-import 'package:get/get_core/src/get_main.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 class CustomTextStyle {
   static TextStyle title(BuildContext context) {
     return Theme.of(context).textTheme.headline5!.copyWith(fontSize: 20, color: Colors.grey[700]);
-  }
-}
-
-class SnackBarSuccess {
-  final String titleText;
-  final String messageText;
-  final IconData icon;
-  final Color backgroundColor;
-  final Color colorText;
-
-  SnackBarSuccess({
-    required this.titleText,
-    required this.messageText,
-    this.icon = Icons.check_circle,
-    this.backgroundColor = AppColors.success_color,
-    this.colorText = Colors.white,
-  });
-
-  show() {
-    Get.snackbar("", "",
-        margin: EdgeInsets.only(top: 55),
-        titleText: Text(
-          titleText,
-          style: body1.copyWith(fontWeight: FontWeight.bold, color: Colors.white),
-        ),
-        messageText: Text(
-          messageText,
-          style: captionLite.copyWith(fontWeight: FontWeight.normal, color: Colors.white),
-        ),
-        icon: Icon(
-          icon,
-          color: Colors.white,
-        ),
-        backgroundColor: backgroundColor,
-        colorText: colorText,
-        snackPosition: SnackPosition.TOP);
-    margin:
-    const EdgeInsets.only(top: 24.0);
-  }
-}
-
-class SnackBarFailure {
-  final String titleText;
-  final String messageText;
-  final IconData icon;
-  final Color backgroundColor;
-  final Color colorText;
-
-  SnackBarFailure({
-    required this.titleText,
-    required this.messageText,
-    this.icon = Icons.error_outline,
-    this.backgroundColor = Colors.red,
-    this.colorText = Colors.white,
-  });
-
-  show() {
-    Get.snackbar("", "",
-        margin: EdgeInsets.only(top: 55),
-        titleText: Text(
-          titleText,
-          style: body1.copyWith(fontWeight: FontWeight.bold, color: Colors.white),
-        ),
-        messageText: Text(
-          messageText,
-          style: captionLite.copyWith(fontWeight: FontWeight.normal, color: Colors.white),
-        ),
-        icon: Icon(
-          icon,
-          color: Colors.white,
-        ),
-        backgroundColor: backgroundColor,
-        colorText: colorText,
-        snackPosition: SnackPosition.TOP);
   }
 }
 
